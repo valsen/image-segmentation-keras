@@ -17,8 +17,8 @@ from .models import model_from_name
 
 import six
 
-random.seed(0)
-class_colors = [  ( random.randint(0,255),random.randint(0,255),random.randint(0,255)   ) for _ in range(5000)  ]
+#random.seed(0)
+class_colors = [  (0, 0, 0), (255, 0, 0, 255), (255, 255, 0, 255), (255, 0, 255, 255)  ]
 
 
 def model_from_checkpoint_path( checkpoints_path ):
